@@ -10,8 +10,7 @@ export const mult = (a, b) => {
 
 // экспортируйте calc как export по умолчанию
 
-const calc = (expression) => {
+export default (expression) => {
   console.log('implementation for calc');
   // ... implementation
 };
-export default calc;
