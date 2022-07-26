@@ -35,7 +35,9 @@ module.exports = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      output: './dist',
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
